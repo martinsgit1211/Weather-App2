@@ -6,7 +6,7 @@ function getWeather() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            displayWeather(data, location); 
+            displayWeather(data, location);
         })
         .catch(error => {
             console.error('Error:', error);
